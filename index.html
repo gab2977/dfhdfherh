@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa da Escola - Guia de Ambientes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <h1>🏫 Mapa da Escola</h1>
+    <p>Encontre facilidade na navegação e conheça os principais ambientes do nosso espaço escolar.</p>
+
+    <!-- Menu de Navegação -->
+    <nav class="nav-menu" aria-label="Navegação rápida pelos ambientes">
+      <ul>
+        <li><a href="#mapa">🗺️ Visualizar Mapa</a></li>
+        <li><a href="#ambientes">📍 Lista de Ambientes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-container">
+
+    <!-- Seção do Mapa Esquemático Visual -->
+    <section id="mapa" class="section-container" aria-labelledby="map-heading">
+      <h2 id="map-heading">🗺️ Planta do Mapa Escolar</h2>
+      <p class="section-intro">Representação gráfica dos setores da escola. Clique ou navegue para ver os detalhes abaixo.</p>
+
+      <div class="school-map" role="region" aria-label="Esquema gráfico do mapa da escola">
+        
+        <div class="map-row">
+          <a href="#entrada" class="map-zone zone-entry">
+            <span class="zone-icon" aria-hidden="true">🏫</span>
+            <span class="zone-label">Entrada</span>
+          </a>
+          <a href="#secretaria" class="map-zone zone-admin">
+            <span class="zone-icon" aria-hidden="true">🏢</span>
+            <span class="zone-label">Secretaria</span>
+          </a>
+        </div>
+
+        <div class="map-row">
+          <a href="#professores" class="map-zone zone-admin">
+            <span class="zone-icon" aria-hidden="true">👩‍🏫</span>
+            <span class="zone-label">Sala dos Professores</span>
+          </a>
+          <a href="#patio" class="map-zone zone-recreation">
+            <span class="zone-icon" aria-hidden="true">🌳</span>
+            <span class="zone-label">Pátio</span>
+          </a>
+          <a href="#refeitorio" class="map-zone zone-recreation">
+            <span class="zone-icon" aria-hidden="true">🍽️</span>
+            <span class="zone-label">Refeitório</span>
+          </a>
+        </div>
+
+        <div class="map-row">
+          <a href="#salas" class="map-zone zone-study">
+            <span class="zone-icon" aria-hidden="true">📚</span>
+            <span class="zone-label">Salas de Aula</span>
+          </a>
+          <a href="#biblioteca" class="map-zone zone-study">
+            <span class="zone-icon" aria-hidden="true">📖</span>
+            <span class="zone-label">Biblioteca</span>
+          </a>
+          <a href="#banheiro" class="map-zone zone-service">
+            <span class="zone-icon" aria-hidden="true">🚻</span>
+            <span class="zone-label">Banheiros</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Seção de Descrição dos Ambientes -->
+    <section id="ambientes" class="section-container" aria-labelledby="ambientes-heading">
+      <h2 id="ambientes-heading">📍 Descrição dos Ambientes</h2>
+
+      <div class="cards-grid">
+
+        <article id="entrada" class="card card-entry">
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">🏫</span>
+            <h3>Entrada</h3>
+          </div>
+          <p>Acesso principal da escola, onde é feita a recepção de alunos, funcionários e visitantes com controle de segurança.</p>
+        </article>
+
+        <article id="secretaria" class="card card-admin">
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">🏢</span>
+            <h3>Secretaria</h3>
+          </div>
+          <p>Local de atendimento administrativo, onde são realizadas matrículas, emissões de documentos e orientações gerais.</p>
+        </article>
+
+        <article id="salas" class="card card-study">
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">📚</span>
+            <h3>Sala de Aula</h3>
+          </div>
+          <p>Espaços dedicados ao aprendizado diário, equipados com carteiras, quadros interativos e material pedagógico.</p>
+        </article>
+
+        <article id="biblioteca" class="card card-study">
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">📖</span>
+            <h3>Biblioteca</h3>
+          </div>
+          <p>Ambiente silencioso para leitura, pesquisas acadêmicas, empréstimo de livros e estudo individual ou em grupo.</p>
+        </article>
+
+        <article id="banheiro" class="card card-service">
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">🚻</span>
+            <h3>Banheiro</h3>
+          </div>
+          <p>Instalações sanitárias masculinas, femininas e adaptadas para pessoas com deficiência e mobilidade reduzida.</p>
+        </article>
+
+        <article id="refeitorio" class="card card-recreation">
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">🍽️</span>
+            <h3>Refeitório</h3>
+          </div>
+          <p>Área destinada à alimentação dos estudantes e equipe escolar durante os horários de refeição e intervalos.</p>
+        </article>
+
+        <article id="patio" class="card card-recreation">
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">🌳</span>
+            <h3>Pátio</h3>
+          </div>
+          <p>Espaço aberto de convivência, recreação e integração social ao ar livre entre as aulas.</p>
+        </article>
+
+        <article id="professores" class="card card-admin">
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">👩‍🏫</span>
+            <h3>Sala dos Professores</h3>
+          </div>
+          <p>Ambiente exclusivo para preparação de aulas, reuniões pedagógicas e descanso do corpo docente.</p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>&copy; 2026 - Guia de Acessibilidade Escolar | Desenvolvido para facilitar a navegação no espaço educacional.</p>
+  </footer>
+
+</body>
+</html>
